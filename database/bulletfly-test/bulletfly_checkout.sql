@@ -1,0 +1,1 @@
+INSERT INTO bulletfly.checkout (user_id, book_id, checkout_time, should_return_time, real_return_time, is_returned) VALUES (2014302634, 2, '2017-05-11 22:31:27', '2017-06-11 22:33:43', null, false);

@@ -1,0 +1,29 @@
+CREATE TABLE book
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    author VARCHAR(255),
+    book_name VARCHAR(255) NOT NULL,
+    is_borrowed BIT(1) DEFAULT b'0' NOT NULL
+);
+CREATE TABLE checkout
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    user_id INT(11) NOT NULL,
+    book_id INT(11) NOT NULL,
+    checkout_time DATETIME NOT NULL,
+    should_return_time DATETIME,
+    real_return_time DATETIME,
+    is_returned BIT(1) DEFAULT b'0' NOT NULL,
+    CONSTRAINT checkout___fk_userid FOREIGN KEY (user_id) REFERENCES user (id),
+    CONSTRAINT checkout__fk_bookid FOREIGN KEY (book_id) REFERENCES book (id)
+);
+CREATE INDEX checkout__fk_bookid ON checkout (book_id);
+CREATE INDEX checkout___fk_userid ON checkout (user_id);
+CREATE TABLE user
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    is_admin BIT(1) DEFAULT b'0' NOT NULL
+);
+CREATE UNIQUE INDEX user_username_uindex ON user (username);

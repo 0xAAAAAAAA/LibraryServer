@@ -1,0 +1,3 @@
+INSERT INTO bulletfly.checkout (user_id, book_id, checkout_time, should_return_time, real_return_time, is_returned) VALUES (2014302634, 2, '2017-05-11 22:31:27', '2017-06-11 22:33:43', '2017-06-22 17:34:26', true);
+INSERT INTO bulletfly.checkout (user_id, book_id, checkout_time, should_return_time, real_return_time, is_returned) VALUES (2014302634, 2, '2017-06-25 06:40:41', '2017-09-25 06:40:41', '2017-06-25 15:23:06', true);
+INSERT INTO bulletfly.checkout (user_id, book_id, checkout_time, should_return_time, real_return_time, is_returned) VALUES (2014302634, 2, '2017-06-25 07:23:57', '2017-09-25 07:23:57', '2017-06-25 15:24:02', true);

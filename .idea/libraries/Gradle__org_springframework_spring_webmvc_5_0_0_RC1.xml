@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-webmvc:5.0.0.RC1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.0.RC1/74bdd478209b48ac4ba9860cc60617393a8eea31/spring-webmvc-5.0.0.RC1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.0.RC1/ad9705d8dfa3ac21d41cf52dd1fef0aea6d5c13e/spring-webmvc-5.0.0.RC1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
